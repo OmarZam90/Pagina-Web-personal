@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/php.css">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <script src="./js/limpiar.js"></script>
+    <link rel="icon" type="image/x-icon" href="img/tbl.png">
+    <title>Base de datos clientes</title>
+</head>
+<body>
+    <div class="main-page">
+        <a href="./index.html"><h1 class="a-main-page">Omar Francisco Moreno Zamora <span>Estudiante de Ingenieria en Computacion</span></h1></a>   
+    </div>
+    <div class="main">
+        <header class="header">
+            <h1 class="header-1">Base de datos Clientes</h1>
+            <div class="imagen">
+                <img src="img/db.png" alt="db">
+            </div>        
+        </header>
+         
+        <form id="formulario" action="registrar.php" method="post" onsubmit="limpiarFormulario()">
+            <fieldset>
+                <div class="pad-legend">
+                    <legend>Base de datos de clientes:</legend>
+                </div>
+                
+                <div class="campos">
+                    <div>
+                        <label class="etiqueta" for="">Empresa:</label>   
+                        <input class="input-text" placeholder="Empresa" type="text" name="empresa" id="empresa" value="" onfocus="borrarValor(this)">
+                    </div>
+                    <div>
+                        <label class="etiqueta" for="">Contacto</label>   
+                        <input class="input-text" placeholder="Contacto" type="text" name="contacto" id="contacto" value="" onfocus="borrarValor(this)">
+                    </div>
+                    <div>
+                        <label class="etiqueta" for="">País</label>   
+                        <input class="input-text" placeholder="País" type="text" name="pais" id="pais" value="" onfocus="borrarValor(this)">
+                    </div>
+                </div>
+            </fieldset>
+            <div class="boton-margin">
+                <a style="text-decoration: none; margin-right: 2.5px;" class="boton" href="tblMateriales.php">Ir a tabla de clientes</a>
+                <input class="boton" type="submit" value="Enviar">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
